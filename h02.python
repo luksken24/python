@@ -1,0 +1,16 @@
+# Ken Luks
+#04.10.20
+#harjutus02
+
+# 9.arvusüsteem
+arv = int(input("lisa 10nd arv: "))
+print(bin(arv))
+print(hex(arv))
+
+
+
+#10. kütusekulu arvutamine
+liiter = int(input("lisa kütusekulu: "))
+km = int(input("lisa läbitud kilomeetrid: "))
+kytusekulu = liiter/(km/100)
+print("sinu keskmine kütusekulu on: ",kytusekulu)
