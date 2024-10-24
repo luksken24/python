@@ -6,7 +6,7 @@ import random
 # 1 kull
 # 0 kiri
 suv = random.randint(0,1)
-kasutaja_valik = input("kiri või kull")
+kasutaja_valik = input("kiri või kull:")
 if (suv ==1 and kasutaja_valik =="kull") or (suv == 0 and kasutaja_valik == "kiri"):
     color = "green"
 else:
