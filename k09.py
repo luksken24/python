@@ -1,6 +1,6 @@
 # 24.20.24 Luks
 # ülesanne 09
-
+"""
 # Genereeri ja kuva arvud 1-20
 for i in range(1,21):
     print(i, end=" ")
@@ -51,10 +51,65 @@ for i in range(1,43):
         print(i, end=" ")
 
 print()
-
+"""
 
 
 
 
 
 # Leia kõik arvud vahemikus 200 kuni 320, mis jaguvad 7-ga, kuid ei jagu 5-ga. Prindi need arvud komadega eraldatult ühele reale.
+
+# kuva nimekirja unikalsed alusd 
+nimed = ['Martin', 'Tõnu', 'Andres', 'Tõnu', 'Andres', 'Andres', 'Andres', 'Tõnu', 'Marko', 'Mari', 'Jüri', 'Liis', 'Marko', 'Piret', 'Anu']
+unimed = []
+
+for nimi in nimed:
+    if nimi not in unimed:
+        unimed.append(nimi)
+
+print(unimed)
+
+
+#Sulle on saadetud õpilaste keskmised hinded, mille lisasid loendisse. Eralda hinded ning leia kogu rühma parim ja kehvem tulemus ning keskmine hinne.
+ryhma_hinded = ["Mari 4.9", "Jüri 3.1", "Kadri 4.6", "Marko 4.7", "Liis 4.9", "Andres 4.2", "Anu 4.7", "Martin 4.2", "Piret 4.2", "Tõnu 4.1"]
+meeles = []
+
+
+
+for opilane in ryhma_hinded:
+    meeles.append(float(opilane.split()[1]))
+
+print(f"parim tulemus {max(meeles)}")
+print(f"halvim tulemus {min(meeles)}")
+print(f"halvim tulemus {round(sum(meeles)/len(meeles),2)}")
+
+
+
+
+
+
+#Koosta programm, mis genereerib ja kuvab korrutustabeli, kus iga number korrutatakse iseendaga:
+#Näiteks:
+#0 x 0 = 0
+#1 x 1 = 1
+#2 x 2 = 4
+# for i in range(11):
+    # print(f"{i} x {i} = {i*i}")
+
+
+
+#Loo programm, mis loob suvalised tehted 1-100 arvudega.
+#Kasuta tsükli puhul alakriipsu
+#kasuta suvalise tehte märgi jaoks loendit ja sealt suvalise märgi leidmiseks random.choice()
+#Näiteks:
+#7 – 2=
+#45 * 69=
+#71 – 45=
+tehted = ["+", "-", "*", "/"]
+import random   
+for i in range(6):
+    j = random.randint(1,10)
+    k = random.randint(1,10)
+    tehe = random.choice(tehted)
+    if tehe == "+":
+        print(f"{j} {tehe} {k} = {j*k}")
