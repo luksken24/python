@@ -105,11 +105,109 @@ print(f"halvim tulemus {round(sum(meeles)/len(meeles),2)}")
 #7 – 2=
 #45 * 69=
 #71 – 45=
-tehted = ["+", "-", "*", "/"]
-import random   
-for i in range(6):
-    j = random.randint(1,10)
-    k = random.randint(1,10)
-    tehe = random.choice(tehted)
-    if tehe == "+":
-        print(f"{j} {tehe} {k} = {j*k}")
+
+# punktid = 0
+# tehted = ["+", "-", "*", "/"]
+
+# import random   
+# for i in range(6):
+#     j = random.randint(1,10)
+#     k = random.randint(1,10)
+#     tehe = random.choice(tehted)
+#     if tehe == "+":
+#         print(f"{j} {tehe} {k} = ")
+#         vastus = int(input("Vastus: "))
+#         if vastus == j+k:
+#             punktid += 1
+#     elif tehe == "-":
+#             print(f"{j} {tehe} {k} = {j*k}")
+#     if tehe == "*":
+#             print(f"{j} {tehe} {k} = {j*k}")
+#     else :
+#             print(f"{j} {tehe} {k} = {j*k}")
+
+
+#Täienda eelmist ülesannet ja kasutaja käest küsitakse vastust.
+#Õiged vastused loetakse kokku
+#Kui saab vähemalt poole punktid, siis saab A, muul juhul MA
+#Kuva samasugused kujundid:
+
+# for i in range(1,6):
+#     print("*"*i)
+# print()
+# for i in range (1,6):
+#     print("*"*(6-i))
+# print()
+# for i in range (1,6):
+#     print(" "*(5-i) + "*"*i)
+
+# print()
+# for i in range (1,6):
+#     print(" "*(-1+i)+"*"*(6-i))
+
+
+
+
+
+
+
+# Paariarvude summa
+summa = 0
+even_nums = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 3, 32, 34, 36, 38]
+
+
+for i in even_nums:
+    if i%2==0:
+        summa+=i
+    else:
+        break 
+
+print(summa)    
+
+
+
+
+
+# Mitmemõõtmelise massiivi kasutamine for-tsükliga
+# Tutvu elektriautode nimekirjaga, mis sisaldab 10 elektriauto mudelit, nende läbisõidu ulatust ja hinda. Mõista, kuidas andmed on struktureeritud.
+ev_data = [
+    ['vehicle', 'range', 'price'],
+    ['Tesla Model Y Long Range', '330', '58990'],
+    ['Volkswagen ID.4 Pro', '260', '39995'],
+    ['Ford Mustang Mach-E', '300', '42995'],
+    ['Audi e-tron GT', '238', '102700'],
+    ['Nissan Leaf', '149', '27400'],
+    ['BMW iX xDrive50', '324', '83995'],
+    ['Polestar 2', '265', '45500'],
+    ['Kia EV6 Long Range', '310', '47795'],
+    ['Mercedes-Benz EQS 450+', '350', '102310'],
+    ['Hyundai Kona Electric', '258', '37400']
+    ]
+
+
+labisoit = []
+hinnad = []
+kolmsada = []
+for car in ev_data:
+    for i in car:
+        print(f"{i:30}", end =" ") 
+    if car[1] != "range" or car[2] != "price":
+        labisoit.append(int(car[1]))
+        if int(car[1])>=300:
+            kolmsada.append(car[0])
+        hinnad.append(int(car[2]))
+        print(int(car[2])/int(car[1]))
+else:
+        print("ratio")
+
+print(f"keskmine labisoit: {sum(labisoit)/len(labisoit)}")
+print(f"keskmine hind: {sum(hinnad)/len(hinnad)}€")
+print(kolmsada)
+
+
+
+
+
+
+
+
