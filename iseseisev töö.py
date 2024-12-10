@@ -112,18 +112,37 @@ fail = open("rebased.txt", encoding="UTF-8")
 for rida in fail :
     if int(rida) > 0:
         print(rida,end="")
-"""
+
 
 #4.1
 
-print("Osta ja Sa ei kahetse")
 
-"Tartu.upper()"
-for i in range (3):
-    print("Ostan, müün ja vahetan!")
+sg = int(input("Mitu korda soovitakse lauset kuvada : "))
+af = input("millist reklaam lausedt soovite : ")
 
-for i in range (5):
-    print("Tulge kõik ostlema! Kõik -70%")
+
+def banner(x, y) : 
+    for i in range (x):
+        print(y.upper())
+
+banner(sg, af)
+"""
+
+#4.2
+def mahlapakkide_arv(kg):
+    arv = int(round(kg * 0.4/3,0))
+    return arv 
+
+ounad = int(input("Õunte kogus :"))
+
+print(mahlapakkide_arv(ounad))
+    
+
+
+
+
+
+
 
 
 
