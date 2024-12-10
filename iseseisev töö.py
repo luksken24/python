@@ -102,7 +102,7 @@ a = input("palun sisestage, millise aasta andmeid vajate?: ")
 
 
 print(vastuvõetud{int(a[3])-1})
-"""
+
 
 
 #3.2
@@ -112,10 +112,18 @@ fail = open("rebased.txt", encoding="UTF-8")
 for rida in fail :
     if int(rida) > 0:
         print(rida,end="")
+"""
 
+#4.1
 
+print("Osta ja Sa ei kahetse")
 
+"Tartu.upper()"
+for i in range (3):
+    print("Ostan, müün ja vahetan!")
 
+for i in range (5):
+    print("Tulge kõik ostlema! Kõik -70%")
 
 
 
