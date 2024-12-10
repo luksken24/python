@@ -3,21 +3,14 @@
 #Neljas
 import turtle 
 
-d = 100
+d = 70
 
 
 for i in range (5):
     turtle.lt(360/5)
-    turtle.fd(50)
-    for i in range(1):
-            turtle.left(90)
+    for i in range(4):
             turtle.fd(d)
-            turtle.left(90)
-            turtle.fd(d)
-            turtle.left(90)
-            turtle.fd(d)
-            turtle.left(90)
-            turtle.fd(50)
+            turtle.lt(90)
 
 
 
