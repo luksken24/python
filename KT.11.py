@@ -10,14 +10,4 @@ for i in range(10):
 
 
 
-
-
-
-
-
-
-
-
-
-
 turtle.done()
