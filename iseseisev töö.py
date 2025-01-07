@@ -126,7 +126,7 @@ def banner(x, y) :
         print(y.upper())
 
 banner(sg, af)
-"""
+
 
 #4.2
 def mahlapakkide_arv(kg):
@@ -136,10 +136,36 @@ def mahlapakkide_arv(kg):
 ounad = int(input("Õunte kogus :"))
 
 print(mahlapakkide_arv(ounad))
-    
+
+#4.3
+sg = ("maksimaalne eelarve")
+fg = ("minimaalne eeelarve")
+
+def eelarve(y):
+    print()
 
 
 
+
+
+
+
+
+
+#4.4
+def tervitus(n) :
+    for i in range (n):
+        print('võõrustaja: "tere!"')
+        print (f"täna {i+1}. kord tervitada, mõtiskleb võõrustaja. ")
+        print ('külaline: "Tere, suur tänu kutes eest"')
+
+s = int(input("külastajate arv :"))
+tervitus(s)
+
+
+#4.5
+def pronksikarva_summa() :
+"""
 
 
 
