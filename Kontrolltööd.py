@@ -1,8 +1,8 @@
-"""
+
 #10. Kaugushüpe
-for i in range (3):
-tulemused = 
-"""
+
+def main():
+    print("Tere, sisestage kaugushüppe tulemused ")
 
 
 
@@ -43,16 +43,7 @@ try:
 
 """
 
-
-
-
-
-
-
-
-
-
-
+"""
 #16. Täringud
 import random
 
@@ -105,7 +96,7 @@ else:
 
 if __name__ == "__name__":
     main()
-
+"""
 
 
 
@@ -115,22 +106,22 @@ if __name__ == "__name__":
 
 # # #14. Palkade võrdlus
 
-# töötad = {"Hubert Hunt m 2340"
-# 	"Siim Siil m 2570"
-# 	"Märt Mäger m 1960"
-# 	"Vilma Vihmauss n 2060"
-# 	"Merike Metskits n 2250"
-# 	"Kati Karu n 2370"
-# 	"Elmar Elevant m 2900"
-# 	"Timoteus Tigu m 2850"
-# 	"Reet Rebane n 2340"
-# 	"Kalev Kaamel m 2570"
-# 	"Karmen Kass n 2120"
-# 	"Kornelius Koer m 2250"}
+töötad = {"Hubert Hunt m 2340"
+	"Siim Siil m 2570"
+	"Märt Mäger m 1960"
+	"Vilma Vihmauss n 2060"
+	"Merike Metskits n 2250"
+	"Kati Karu n 2370"
+	"Elmar Elevant m 2900"
+	"Timoteus Tigu m 2850"
+	"Reet Rebane n 2340"
+	"Kalev Kaamel m 2570"
+	"Karmen Kass n 2120"
+	"Kornelius Koer m 2250"}
 
-# #eralda meeste ja naiste palgad
-# meeste_palk  = 
-# naiste_palk = 
+#eralda meeste ja naiste palgad
+meeste_palk  = 
+naiste_palk = 
 
 
 
