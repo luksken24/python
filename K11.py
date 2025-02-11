@@ -12,22 +12,3 @@ def pikim_sona(*sonad):
 
 
 pikim_sona("ükas", "kaks", "kolmkümmend")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
