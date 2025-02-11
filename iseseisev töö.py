@@ -102,7 +102,7 @@ a = input("palun sisestage, millise aasta andmeid vajate?: ")
 
 
 print(vastuvõetud{int(a[3])-1})
-"""
+
 
 
 #3.2
@@ -113,6 +113,59 @@ for rida in fail :
     if int(rida) > 0:
         print(rida,end="")
 
+
+#4.1
+
+
+sg = int(input("Mitu korda soovitakse lauset kuvada : "))
+af = input("millist reklaam lausedt soovite : ")
+
+
+def banner(x, y) : 
+    for i in range (x):
+        print(y.upper())
+
+banner(sg, af)
+
+
+#4.2
+def mahlapakkide_arv(kg):
+    arv = int(round(kg * 0.4/3,0))
+    return arv 
+
+ounad = int(input("Õunte kogus :"))
+
+print(mahlapakkide_arv(ounad))
+
+#4.3
+sg = ("maksimaalne eelarve")
+fg = ("minimaalne eeelarve")
+
+def eelarve(y):
+    print()
+
+
+
+
+
+
+
+
+
+#4.4
+def tervitus(n) :
+    for i in range (n):
+        print('võõrustaja: "tere!"')
+        print (f"täna {i+1}. kord tervitada, mõtiskleb võõrustaja. ")
+        print ('külaline: "Tere, suur tänu kutes eest"')
+
+s = int(input("külastajate arv :"))
+tervitus(s)
+
+
+#4.5
+def pronksikarva_summa() :
+"""
 
 
 
