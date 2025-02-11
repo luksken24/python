@@ -9,11 +9,7 @@ d = 100
 for i in range (5):
     turtle.lt(360/5)
     turtle.fd(50)
-    for i in range(1):
-            turtle.left(90)
-            turtle.fd(d)
-            turtle.left(90)
-            turtle.fd(d)
+    for i in range(3):
             turtle.left(90)
             turtle.fd(d)
             turtle.left(90)
